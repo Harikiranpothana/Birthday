@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     else { dn.hidden = true; $('#dncmsg').innerHTML = `<span class="big pop">🎉 You win, ${N}! The only prize: you are officially stubborn. 🎉</span>`; confetti(); } };
 
   $$('#court [data-d]').forEach(b => b.onclick = async () => { $$('#court .btn').forEach(x => x.disabled = true); $('#dres').textContent = b.dataset.d; await sleep(2200);
-    $('#court').innerHTML = `<h3 class="pop">GUILTY.</h3><p>Sentence: One more year of being absolutely iconic.</p>`; confetti(); });
+    $('#court').innerHTML = `<h3 class="pop">GUILTY.</h3><p>Sentence: One more year of being absolutely Crazy😎.</p>`; confetti(); });
 
   $('#shk').onclick = () => $('#shkmsg').textContent = `Hark, fair ${N}! Another year hath dawned upon thee, and still thy drama doth outshine the stars. Thou art a headache most beloved. Happy Birthday, thou magnificent menace!`;
 
   const C = ['You\'re genuinely one of the nicest people to have around.', 'You make ordinary days more entertaining.', 'Your presence makes a difference.', 'Never underestimate how much people appreciate you.', 'Okay, enough compliments. Don\'t become overconfident.'];
   $('#comp').onclick = async function () { this.disabled = true; const m = $('#compmsg'); for (const c of C) { m.className = 'big pop'; m.textContent = c; await sleep(2600); m.className = 'big'; } this.disabled = false; this.textContent = 'AGAIN? FINE.'; };
 
-  const S = [['pop', '🎂 Funny wish', `Happy Birthday ${N}! May your Wi-Fi be strong and your drama be stronger.`], ['slide', '💜 Compliment', 'You are a genuinely good friend. Annoyingly so.'], ['spin', '🔮 Prediction', 'This year you will say "I\'m fine" at least 400 times. Nobody will believe you.'], ['pop', '🏆 Award', 'Award: Most Likely To Make A Normal Plan Complicated.'], ['slide', '📸 Memory', 'Hidden memory unlocked: scroll up to the Archives. Yes, again.'], ['spin', '🥠 Fortune', 'A great snack is in your near future.'], ['pop', '⚠ Warning', 'Warning: excessive happiness approaching. Brace yourself.']];
+  const S = [['pop', '🎂 Funny wish', `Happy Birthday ${N}! May your Wi-Fi be strong and your drama be stronger.`], ['slide', '💜 Compliment', 'You are a genuinely good friend. Annoyingly so.'], , ['pop', '🏆 Award', 'Award: Most Likely To Make A Normal Plan Complicated.'], ['slide', '📸 Memory', 'Hidden memory unlocked: scroll up to the Archives. Yes, again.'], ['pop', '⚠ Warning', 'Warning: excessive happiness approaching. Brace yourself.']];
   let bag = []; $('#gen').onclick = () => { if (!bag.length) bag = [...S].sort(() => Math.random() - .5); const [a, t, m] = bag.pop(); const s = $('#sur'); s.className = 'card'; void s.offsetWidth; s.className = 'card ' + a; s.innerHTML = `<b>${t}</b><p>${m}</p>`; };
 });
