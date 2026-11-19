@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Operation: Make Her Smile</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@0,700;1,500&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<canvas id="stars"></canvas><div id="bar"></div>
+<button id="mute" aria-label="Mute or unmute music" hidden>🔊</button><nav id="dots" hidden></nav>
+
+<header id="intro">
+ <p class="tag">CLASSIFIED PROJECT</p><h1>OPERATION:<br>MAKE HER SMILE</h1>
+ <p id="tw" class="tw"></p>
+ <button id="enter" class="btn glow">ENTER MISSION</button>
+ <div id="load" hidden><div><i></i></div><small>Initializing chaos…</small></div>
+</header>
+
+<main id="app" hidden>
+<section data-t="Report"><h2>CONFIDENTIAL SUBJECT REPORT</h2>
+ <ul class="list"><li>Known for being dramatic.</li><li>Frequently causes unnecessary chaos.</li><li>Suspicious levels of cuteness.</li><li>Occasionally behaves like the main character.</li></ul>
+ <div class="stats"><div>Drama Level<b data-n="999">0</b>%</div><div>Cuteness Level<b>Classified</b></div><div>Annoying Behaviour<b>Unmeasurable</b></div><div>Main Character Energy<b data-n="1000">0</b>%</div></div>
+ <button id="scan" class="btn">START INVESTIGATION</button>
+ <div class="meter"><i id="scanbar"></i></div><p id="scanmsg" class="note"></p></section>
+
+<section data-t="Quiz"><h2>FRIENDSHIP COMPATIBILITY TEST</h2><div id="quiz" class="card"></div></section>
+
+<section data-t="Button"><h2>THE DO NOT CLICK CHALLENGE</h2><button id="dnc" class="btn big">DO NOT CLICK THIS BUTTON.</button><p id="dncmsg" class="note"></p></section>
+
+<section data-t="Court"><h2>THE PEOPLE VS. <span class="nm"></span></h2>
+ <ul class="list"><li>Excessive drama.</li><li>Unnecessary cuteness.</li><li>Disturbing levels of attitude.</li><li>Making normal situations unnecessarily complicated.</li><li>Being suspiciously iconic.</li></ul>
+ <div id="court" class="card"><p>The defendant may choose a defense:</p>
+ <button class="btn sm" data-d="“I was provoked.” — Overruled. Everyone saw it.">I was provoked</button>
+ <button class="btn sm" data-d="“It’s not drama, it’s passion.” — The jury is not laughing. Okay, a little.">It’s passion</button>
+ <button class="btn sm" data-d="“I plead the fifth.” — Denied. This is a friendship court.">Plead the fifth</button><p id="dres" class="note"></p></div></section>
+
+<section data-t="Childhood" class="paper"><p class="tag">CLASSIFIED SINCE BIRTH</p><h2>THE CHILDHOOD ARCHIVES</h2>
+ <p>Before the drama. Before the attitude. Before everything… there was the original version.</p><p class="stamp">⚠ EXTREMELY CUTE EVIDENCE DETECTED</p>
+ <div id="kid" class="wall"></div>
+ <div class="card dark"><b>SUBJECT:</b> <span class="nm"></span><br><b>AGE:</b> CLASSIFIED<br><b>KNOWN ACTIVITY:</b> Being unnecessarily adorable.<br><b>FUTURE PREDICTION:</b> Professional troublemaker.</div></section>
+
+<section data-t="Memories" class="paper"><h2>THE ARCHIVES OF OUR QUESTIONABLE DECISIONS</h2><div id="mem" class="wall"></div></section>
+
+<section data-t="Cringe"><h2>THE OFFICIAL DEPARTMENT OF UNNECESSARY CRINGE</h2>
+ <p class="news">📰 BREAKING NEWS: Local girl continues to be ridiculously adorable. Investigation ongoing.</p>
+ <p class="news">🚨 OFFICIAL WARNING: Excessive cuteness detected. Please maintain distance. Cringe Level: 9999.</p>
+ <div class="cert"><small>OFFICIAL CERTIFICATE</small><h3>THE CERTIFIED HEADACHE AWARD</h3><p>Presented to</p><h3 class="nm"></h3><p>For outstanding achievement in being dramatic, annoying and somehow still iconic.</p><span class="stamp">APPROVED</span></div>
+ <button id="shk" class="btn">SHAKESPEARE MODE</button><p id="shkmsg" class="note serif"></p></section>
+
+<section data-t="Compliments"><h2>COMPLIMENT ATTACK</h2><button id="comp" class="btn">I DON'T NEED COMPLIMENTS.</button><p id="compmsg" class="big"></p></section>
+
+<section data-t="Surprise"><h2>RANDOM SURPRISE MACHINE</h2><button id="gen" class="btn glow">GENERATE MY SURPRISE</button><div id="sur" class="card"></div></section>
+
+<section data-t="Heart" class="calm"><h2>OKAY, JOKES ASIDE...</h2><p class="note">Enough nonsense for a moment. Some things deserve to be said properly.</p><div id="heart" class="letter"></div>
+ <button id="goFinale" class="btn glow">THERE'S ONE MORE THING →</button></section>
+</main>
+
+<div id="fin" hidden>
+ <div id="finTxt"><p></p></div>
+ <div id="stage" hidden><video id="vid" playsinline preload="none"></video><button id="play" class="btn glow" hidden>▶ PLAY VIDEO</button>
+  <div id="end" hidden><h2>HAPPY BIRTHDAY, <span class="nm"></span>!</h2><p id="finMsg"></p><p>Stay chaotic. Stay wonderful. Never change.</p></div>
+  <div class="row"><button id="replay" class="link">↻ replay</button><button id="back" class="link">← back to the site</button></div></div>
+</div>
+<div id="lb" hidden><figure><img alt=""><figcaption></figcaption></figure></div>
+<script src="js/main.js"></script><script src="js/audio.js"></script><script src="js/interactions.js"></script></body></html>
