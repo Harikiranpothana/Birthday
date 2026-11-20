@@ -20,7 +20,7 @@ const birthdayConfig = {
   // Your personal message (each array item = one paragraph/line):
   heartMessage: [
     "Happy Birthday Tejuuu! ❤️🎀",
-    "You are not just my best friend You are my Kuturu😁, you're one of the most special people in my life. 🫶",
+    "You are not just my best friend 😁, you're one of the most special people in my life. 🫶",
     "No matter how much we fight each other, you'll always have a special place in my heart. Thank you for being with me.",
     "May all your dreams come true, and may your smile never fade. ✨",
     "Never change yourself for anyone!",
